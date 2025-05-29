@@ -1,0 +1,28 @@
+.textA {
+   font-family: 'Arial', sans-serif;
+   text-indent: 1.5em;
+   line-height: 1.1;
+   font-size: 16px;
+}
+.textB {
+   font-family: 'Helvetica', sans-serif;
+   text-indent: 1.5em;
+   font-size: 14pt;
+}
+.textC {
+   font-family: 'Verdana', sans-serif;
+   text-indent: 1.5em;
+   line-height: 1.1;
+   font-size: 1.3em;
+}
+.textD {
+   font-family: 'Tahoma', sans-serif;
+   text-indent: 1.5em;
+   line-height: 1.1;
+   font-size: 140%;
+}
+.textE {
+   font-family: 'Trebuchet MS', sans-serif;
+   text-indent: 1.5em;
+   line-height: 1.1;
+}

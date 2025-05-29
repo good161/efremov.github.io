@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Регистрация</title>
+    <header id="styles-site"></header>
+</head>
+<body>
+  <div class="particles-container" id="particles-js"></div>
+    <div class="page-text">
+      <div class="card textE">
+        <div class="registration-module">
+        <div class="registration-card">
+            <div class="registration-header">
+                <h1 class="registration-header__title">Создание учетной записи</h1>
+                <p class="registration-header__subtitle">Заполните форму для регистрации в системе</p>
+            </div>
+            <form id="registrationForm" class="registration-form">
+                <div class="registration-form__group">
+                    <label for="username" class="registration-form__label">Имя пользователя</label>
+                    <input type="text" id="username" class="registration-form__input" placeholder="Введите ваш логин" required>
+                    <div class="registration-form__error-message">Необходимо указать имя пользователя</div>
+                </div>
+                <div class="registration-form__group">
+                    <label for="email" class="registration-form__label">Электронная почта</label>
+                    <input type="email" id="email" class="registration-form__input" placeholder="example@domain.com" required>
+                    <div class="registration-form__error-message">Введите корректный email-адрес</div>
+                </div>
+                <div class="registration-form__group">
+                    <label for="password" class="registration-form__label">Пароль</label>
+                    <input type="password" id="password" class="registration-form__input" placeholder="Не менее 8 символов" required>
+                    <div class="registration-form__error-message">Пароль должен содержать минимум 8 символов</div>
+                </div>
+                <div class="registration-form__group">
+                    <label for="confirmPassword" class="registration-form__label">Подтверждение пароля</label>
+                    <input type="password" id="confirmPassword" class="registration-form__input" placeholder="Повторите ваш пароль" required>
+                    <div class="registration-form__error-message">Пароли не совпадают</div>
+                </div>
+                <button type="submit" class="registration-form__submit">Зарегистрироваться</button>
+            </form>
+            <div class="registration-footer">
+                Уже зарегистрированы? <a href="/login" class="registration-footer__link">Войти в систему</a>
+            </div>
+        </div>
+    </div>
+      </div>
+      </div>
+    <div id="scrollToTop" title="Наверх">↑</div>
+    <script async src="js/styles.js"></script>
+    <script src="js/footer_html.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/gears.js"></script>
+    <script src="js/sparks.js"></script>
+    <script src="js/space-simulation.js"></script>
+</body>
+</html>

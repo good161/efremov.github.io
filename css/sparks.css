@@ -1,0 +1,22 @@
+.mechanical-spark {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    opacity: 0;
+    filter: blur(1px);
+    will-change: transform, opacity, background-color, box-shadow;
+    pointer-events: none;
+    z-index: 2000;
+    background-color: #FF4500;
+    box-shadow: 0 0 12px 4px #FF4500;
+}
+.mechanical-spark-light {
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1500;
+    background: radial-gradient(circle, rgba(255,69,0,0.2) 0%, rgba(255,69,0,0) 70%);
+    transform: translate(-50%, -50%);
+    will-change: width, height, opacity;
+}

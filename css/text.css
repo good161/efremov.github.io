@@ -1,0 +1,65 @@
+.page-text {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  position: relative;
+  box-sizing: border-box;
+}
+.particles-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+.card {
+  width: 90%;
+  max-width: 1340px;
+  padding: 30px;
+  border-radius: 16px;
+  background: rgba(15, 12, 41, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #fff;
+  box-shadow: 0 0 30px rgba(106, 90, 205, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 auto 80px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.card:hover {
+  box-shadow: 0 0 40px rgba(138, 43, 226, 0.6);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #ff00cc, #3333ff, #00ccff);
+  z-index: -1;
+  border-radius: 18px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.card:hover::before {
+  opacity: 0.5;
+  animation: animateGlow 4s linear infinite;
+}
+@keyframes animateGlow {
+  0% { filter: blur(5px); opacity: 0.5; }
+  50% { filter: blur(10px); opacity: 0.8; }
+  100% { filter: blur(5px); opacity: 0.5; }
+}
+.grid-2x4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
