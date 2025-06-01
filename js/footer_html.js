@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             <div class="footer-developer">
                 <div class="developer-name">Ефремов Олег Станиславович</div>
-                <div class="developer-year">© 2025 Все права защищены</div>
-                <div class="tech-badge">Версия 1.0.0</div>
+                <div class="developer-year"><u>© 2025 Все права защищены</u></div>
+                <div class="tech-badge"><s>Версия 1.0.0</s></div>
             </div>
         </div>
     `;
