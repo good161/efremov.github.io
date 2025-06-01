@@ -1,17 +1,14 @@
-#spaceSimulation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#solar-system {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 500px;
+    height: 500px;
 }
-#celestialContainer {
-    width: 550px;
-    height: 550px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 100, 255, 0.3);
-}
-#universeCanvas {
+#canvas {
+    border-radius: 30px;
     display: block;
     width: 100%;
     height: 100%;
