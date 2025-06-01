@@ -7,40 +7,92 @@
   <div class="particles-container" id="particles-js"></div>
     <div class="page-text">
       <div class="card textE">
-        <div class="registration-module">
-        <div class="registration-card">
-            <div class="registration-header">
-                <h1 class="registration-header__title">Создание учетной записи</h1>
-                <p class="registration-header__subtitle">Заполните форму для регистрации в системе</p>
+        <div class="registration-container">
+            <div class="registration-module">
+                <div class="registration-card">
+                    <div class="registration-header">
+                        <h1 class="registration-header__title">Создайте аккаунт</h1>
+                        <p class="registration-header__subtitle">Присоединяйтесь к нашему сообществу</p>
+                    </div>
+                    <form class="registration-form" id="registrationForm">
+                        <div class="registration-form__group">
+                            <label for="username" class="registration-form__label">Имя пользователя</label>
+                            <input type="text" id="username" class="registration-form__input" placeholder="Введите ваше имя" required>
+                            <div class="registration-form__error-message">Пожалуйста, введите имя пользователя</div>
+                        </div>
+                        <div class="registration-form__group">
+                            <label for="email" class="registration-form__label">Email</label>
+                            <input type="email" id="email" class="registration-form__input" placeholder="example@mail.com" required>
+                            <div class="registration-form__error-message">Пожалуйста, введите корректный email</div>
+                        </div>
+                        <div class="registration-form__group">
+                            <label for="password" class="registration-form__label">Пароль</label>
+                            <input type="password" id="password" class="registration-form__input" placeholder="Не менее 8 символов" required>
+                            <div class="registration-form__error-message">Пароль должен содержать минимум 8 символов</div>
+                        </div>
+                        <div class="registration-form__group">
+                            <label for="confirmPassword" class="registration-form__label">Подтвердите пароль</label>
+                            <input type="password" id="confirmPassword" class="registration-form__input" placeholder="Повторите ваш пароль" required>
+                            <div class="registration-form__error-message">Пароли не совпадают</div>
+                        </div>
+                        <button type="submit" class="registration-form__submit">Зарегистрироваться</button>
+                    </form>
+                    <div class="registration-footer">
+                        Уже есть аккаунт? <a href="#" class="registration-footer__link">Войдите</a>
+                    </div>
+                </div>
             </div>
-            <form id="registrationForm" class="registration-form">
-                <div class="registration-form__group">
-                    <label for="username" class="registration-form__label">Имя пользователя</label>
-                    <input type="text" id="username" class="registration-form__input" placeholder="Введите ваш логин" required>
-                    <div class="registration-form__error-message">Необходимо указать имя пользователя</div>
+            <div class="terms-frame">
+                <div class="terms-header">
+                    <h1 class="terms-header__title">Условия использования</h1>
+                    <p class="terms-header__subtitle">Пожалуйста, ознакомьтесь перед регистрацией</p>
                 </div>
-                <div class="registration-form__group">
-                    <label for="email" class="registration-form__label">Электронная почта</label>
-                    <input type="email" id="email" class="registration-form__input" placeholder="example@domain.com" required>
-                    <div class="registration-form__error-message">Введите корректный email-адрес</div>
-                </div>
-                <div class="registration-form__group">
-                    <label for="password" class="registration-form__label">Пароль</label>
-                    <input type="password" id="password" class="registration-form__input" placeholder="Не менее 8 символов" required>
-                    <div class="registration-form__error-message">Пароль должен содержать минимум 8 символов</div>
-                </div>
-                <div class="registration-form__group">
-                    <label for="confirmPassword" class="registration-form__label">Подтверждение пароля</label>
-                    <input type="password" id="confirmPassword" class="registration-form__input" placeholder="Повторите ваш пароль" required>
-                    <div class="registration-form__error-message">Пароли не совпадают</div>
-                </div>
-                <button type="submit" class="registration-form__submit">Зарегистрироваться</button>
-            </form>
-            <div class="registration-footer">
-                Уже зарегистрированы? <a href="/login" class="registration-footer__link">Войти в систему</a>
+                <iframe srcdoc='
+                    <!DOCTYPE html>
+                    <html>
+                    <head>
+                        <style>
+                            body {
+                                font-family: "Segoe UI", sans-serif;
+                                background: transparent;
+                                color: #ffffff;
+                                padding: 20px;
+                                margin: 0;
+                                line-height: 1.6;
+                            }
+                            h3 {
+                                color: #a0c4ff;
+                                margin-top: 0;
+                            }
+                            ul {
+                                padding-left: 20px;
+                            }
+                            li {
+                                margin-bottom: 10px;
+                                animation: fadeIn 0.6s ease-out;
+                            }
+                            @keyframes fadeIn {
+                                from { opacity: 0; transform: translateY(5px); }
+                                to { opacity: 1; transform: translateY(0); }
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <h3>Основные правила:</h3>
+                        <ul>
+                            <li>Минимальный возраст — 18 лет</li>
+                            <li>Запрещено создание фейковых аккаунтов</li>
+                            <li>Ваши данные защищены шифрованием</li>
+                            <li>Мы не передаем email третьим лицам</li>
+                            <li>Вы можете удалить аккаунт в любое время</li>
+                            <li>Спам и оскорбления запрещены</li>
+                            <li>При нарушении правил аккаунт блокируется</li>
+                        </ul>
+                    </body>
+                    </html>
+                ' title="Условия регистрации"></iframe>
             </div>
         </div>
-    </div>
       </div>
       </div>
     <div id="scrollToTop" title="Наверх">↑</div>
